@@ -26,6 +26,10 @@
         - view creates presentation
         - view sends presentation to controller
         - controller sends response to client
+- postgres
+    - https://www.javaguides.net/2021/08/spring-boot-postgresql-crud-example.html
+    - in the commandline, type ```psql -h localhost -U postgres``` to login to postgres after installation
+    - use the application.properties file to specify database properties
 
 ## questions
 
