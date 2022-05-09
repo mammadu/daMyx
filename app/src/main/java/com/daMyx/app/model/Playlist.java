@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "playlists")
-public class User {
+public class Playlist {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
