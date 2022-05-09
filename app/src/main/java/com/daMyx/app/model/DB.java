@@ -2,6 +2,7 @@ package com.daMyx.app.model;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.BufferedReader;
 import java.io.IOException;
  
 import org.json.simple.JSONArray;
@@ -15,7 +16,7 @@ public class DB
         JSONParser jsonParser = new JSONParser();
         Object obj = 0;
         String initial_audio = "src/main/resources/initial_audio.json";
-        try (FileReader reader = new FileReader(initial_audio))
+        try (BufferedReader reader = new BufferedReader(new FileReader(initial_audio)))
         {
             obj = jsonParser.parse(reader);
         }
